@@ -11,19 +11,20 @@
 // ██████  COMPARACIÓN Y CONDICIONALES ████████████████████████
 
 // Test 1:
-function esMayorDeEdad(edad) {return edad >= 18;
+function esMayorDeEdad(edad) { return edad >= 18;
 	// Recibe un número representando la edad de una persona.
 	// Devuelve true si la edad es mayor o igual a 18, false en caso contrario.
 	// Tu código:
 }
 
 // Test 2:
-function clasificarTriangulo(lado1, lado2, lado3) { if (lado1 + lado2 <= lado3 || lado1 + lado3 <= lado2 || lado2 + lado3 <= lado1) {
+function clasificarTriangulo(lado1, lado2, lado3) {if (lado1 + lado2 <= lado3 || lado1 + lado3 <= lado2 || lado2 + lado3 <= lado1) {
     return "No es triángulo";
   }
   if (lado1 === lado2 && lado2 === lado3) return "Equilátero";
   if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) return "Isósceles";
   return "Escaleno";
+}
 	// Recibe tres números representando los lados de un triángulo.
 	// Devuelve:
 	// - "Equilátero" si los tres lados son iguales
@@ -34,10 +35,7 @@ function clasificarTriangulo(lado1, lado2, lado3) { if (lado1 + lado2 <= lado3 |
 }
 
 // Test 3:
-function calcularDescuento(precio, esMiembro, esFinDeSemana) {let descuento = 0;
-	if (esMiembro && esFinDeSemana) descuento = 0.30;
-	else if (esMiembro|| esFinDeSemana) descuento = 0.15;
-	return precio - precio * descuento;
+function calcularDescuento(precio, esMiembro, esFinDeSemana) {
 	// Recibe: precio (número), esMiembro (boolean), esFinDeSemana (boolean)
 	// Reglas de descuento:
 	// - Si es miembro Y es fin de semana: 30% de descuento
@@ -48,17 +46,9 @@ function calcularDescuento(precio, esMiembro, esFinDeSemana) {let descuento = 0;
 }
 
 // Test 4:
-function obtenerDiaSemana(numero) { switch (numero) {
-	case 1: return "lunes";
-	case 2: return "martes"; 
-	case 3: return "miercoles"; 
-	case 4: return "jueves"; 
-	case 5: return"viernes"; 
-	case 6: return "sabado";
-	case 7: return "domingo"; 
-	default: return "dia invalido";
-}
-}
+function obtenerDiaSemana(numero) { 
+	
+
 	
 	// Recibe un número del 1 al 7.
 	// Devuelve el nombre del día correspondiente usando switch:
