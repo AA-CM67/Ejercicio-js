@@ -141,13 +141,13 @@ function redondearNumero(num) {return Math.round (num);
 }
 
 // Test 23
-function redondearHaciaArriba(num) {
+function redondearHaciaArriba(num) {return Math.ceil (num);
 	// Redondea "num" hacia arriba (al próximo entero) y devuélvelo
 	// Tu código:
 }
 
 // Test 24
-function numeroRandom() {
+function numeroRandom() {return Math.
 	//Generar un número al azar entre 0 y 1 y devolverlo
 	//Pista: investigá qué hace el método Math.random()
 	// Tu código:
