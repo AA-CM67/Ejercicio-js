@@ -147,7 +147,7 @@ function redondearHaciaArriba(num) {return Math.ceil (num);
 }
 
 // Test 24
-function numeroRandom() {return Math.
+function numeroRandom() {return Math.Random ();
 	//Generar un número al azar entre 0 y 1 y devolverlo
 	//Pista: investigá qué hace el método Math.random()
 	// Tu código:
