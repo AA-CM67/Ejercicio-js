@@ -95,7 +95,11 @@ function validarContraseña(password) {let mayuscula = /[A-Z]/.test(password);
 }
 
 // Test 7:
-function calcularIMC(peso, altura) {
+function calcularIMC(peso, altura) {let imc = peso / (altura * altura);
+  if (imc < 18.5) return "Bajo peso";
+  if (imc < 25) return "Peso normal";
+  if (imc < 30) return "Sobrepeso";
+  return "Obesidad";
 	// Recibe: peso (kg, número), altura (metros, número)
 	// Calcula el IMC: peso / (altura * altura)
 	// Devuelve un string con la clasificación:
