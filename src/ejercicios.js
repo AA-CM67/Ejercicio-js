@@ -213,9 +213,14 @@ function deEuroAdolar(euro) { return euro * 1.20;
 function esVocal(letra) {if (letra.length !== 1) return "Dato incorrecto";
 
   letra = letra.toLowerCase();
-
-  if (letra === "a,e,i,o,u") 
-    return "Es vocal";
+  if (
+    letra === "a" ||
+    letra === "e" ||
+    letra === "i" ||
+    letra === "o" ||
+    letra === "u")
+    {return "Es vocal";}
+  return "Dato incorrecto";
 	//Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”.
 	//Verificar si el usuario ingresó un string de más de un carácter, en ese caso, informarle
 	//que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
