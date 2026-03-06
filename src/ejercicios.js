@@ -75,7 +75,7 @@ function sonIguales(x, y) { return x ==y;
 }
 
 // Test 13
-function tienenMismaLongitud(str1, str2) {return str1length ===str2length;
+function tienenMismaLongitud(str1, str2) {return str1.length ===str2.length;
 	// Devuelve "true" si las dos strings tienen la misma longitud
 	// De lo contrario, devuelve "false"
 	// Tu código:
@@ -96,34 +96,34 @@ function mayorQueCincuenta(num) {return num > 50;
 }
 
 // Test 16
-function obtenerResto(x, y) {return x / y;
+function obtenerResto(x, y) {return x % y;
 	// Obten el resto de la división de "x" entre "y"
 	// Tu código:
 }
 
 // Test 17
-function esPar(num) {
+function esPar(num) {return num % 2 === 0;
 	// Devuelve "true" si "num" es par
 	// De lo contrario, devuelve "false"
 	// Tu código:
 }
 
 // Test 18
-function esImpar(num) {
+function esImpar(num) {return num % 2 !==0;
 	// Devuelve "true" si "num" es impar
 	// De lo contrario, devuelve "false"
 	// Tu código:
 }
 
 // Test 19
-function elevarAlCuadrado(num) {
+function elevarAlCuadrado(num) {return num ** 2;
 	// Devuelve el valor de "num" elevado al cuadrado
 	// ojo: No es raiz cuadrada!
 	// Tu código:
 }
 
 // Test 20
-function elevarAlCubo(num) {
+function elevarAlCubo(num) { return num ** 3;
 	// Devuelve el valor de "num" elevado al cubo
 	// Tu código:
 }
