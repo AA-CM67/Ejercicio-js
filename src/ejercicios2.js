@@ -48,7 +48,18 @@ function calcularDescuento(precio, esMiembro, esFinDeSemana) {let descuento = 0;
 }
 
 // Test 4:
-function obtenerDiaSemana(numero) {
+function obtenerDiaSemana(numero) { switch (numero) {
+	case 1: return "lunes";
+	case 2: return "martes"; 
+	case 3: return "miercoles"; 
+	case 4: return "jueves"; 
+	case 5: return"viernes"; 
+	case 6: return "sabado";
+	case 7: return "domingo"; 
+	default: return "dia invalido";
+}
+}
+	
 	// Recibe un número del 1 al 7.
 	// Devuelve el nombre del día correspondiente usando switch:
 	// 1 = "Lunes", 2 = "Martes", ..., 7 = "Domingo"
